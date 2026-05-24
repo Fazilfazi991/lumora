@@ -1,0 +1,79 @@
+Create a premium perfume brand website for Efferis by Lumora based on the provided HTML demo and the image assets in /assets/images.
+
+Goal:
+Build a polished, production-ready perfume website starting from the homepage concept included in this zip.
+
+Recommended stack:
+- Next.js 15+
+- Tailwind CSS
+- Framer Motion
+- Optional: shadcn/ui components
+
+Brand direction:
+- Luxury perfume brand
+- Elegant, premium, editorial look
+- Color palette: midnight navy, royal blue accents, champagne gold, ivory, deep charcoal
+- Typography pairing: a classy serif for headings + clean sans-serif for body copy
+
+Pages to build:
+1. Homepage
+2. Product details page
+3. Collection page
+4. About brand page
+5. Contact / WhatsApp enquiry page
+
+Homepage sections to include:
+- Sticky transparent navbar
+- Hero section with strong product image and CTA
+- Brand story section
+- Product gallery / collection showcase
+- Fragrance notes section
+- Lifestyle campaign block
+- Why choose Lumora / premium quality section
+- Testimonials or reviews section
+- CTA footer
+
+Functional requirements:
+- Fully responsive on mobile, tablet, desktop
+- Smooth animations on scroll
+- Premium hover states
+- Easy-to-edit content structure
+- Image optimization
+- Clean folder structure
+- Reusable components
+
+Suggested content direction:
+Headline ideas:
+- Luxury in a bottle.
+- Made to be remembered.
+- A signature scent for elegant presence.
+
+CTA ideas:
+- Shop Now
+- Discover Efferis
+- Explore the Collection
+- WhatsApp Enquiry
+
+Suggested ecommerce structure:
+- Product title: Efferis by Lumora
+- Type: Extrait De Parfum
+- Size: 100ml
+- Use floral, amber, woody, sensual luxury language for notes and storytelling
+
+Use the supplied images as follows:
+- product-main.png -> hero / featured product
+- silky-product.png -> collection / premium feature block
+- notes-product.png -> fragrance notes section
+- lifestyle-use.png -> lifestyle campaign section
+- minimal-product.png -> supporting content / product overview section
+- original-product-reference.png -> optional reference or alternate gallery visual
+
+Deliverables to build:
+- Modern production-ready homepage
+- Reusable sections/components
+- Basic product page template
+- Clean animations
+- Easy expansion for full ecommerce store
+
+Important:
+Keep the design high-end and minimal. Avoid clutter. Make it feel like a luxury perfume brand, not a generic template.
