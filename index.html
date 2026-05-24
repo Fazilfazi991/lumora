@@ -33,8 +33,25 @@
     </header>
 
     <main>
-      <section class="hero-static" id="home" aria-label="Lumora Haute Prive hero banner">
-        <img src="assets/images/Sliders/hero-static-haute-prive.png" alt="Lumora Haute Prive luxury perfume hero banner" />
+      <section class="hero-slider" id="home" aria-label="Lumora hero carousel">
+        <div class="hero-slide active" data-slide="0">
+          <img src="assets/images/Sliders/slider-imperial-clean.png" alt="Lumora Imperial perfume hero banner" />
+        </div>
+        <div class="hero-slide" data-slide="1">
+          <img src="assets/images/Sliders/slider-haute-prive-clean.png" alt="Lumora Haute Prive perfume hero banner" />
+        </div>
+        <div class="hero-slide" data-slide="2">
+          <img src="assets/images/Sliders/slider-duo-clean.png" alt="Lumora Imperial and Haute Prive perfume hero banner" />
+        </div>
+        <div class="slider-controls" aria-label="Hero slider controls">
+          <button class="slider-arrow" type="button" data-slider-prev aria-label="Previous slide">&lsaquo;</button>
+          <div class="slider-dots" role="tablist" aria-label="Choose hero slide">
+            <button class="slider-dot active" type="button" data-slide-to="0" aria-label="Show slide 1" aria-current="true"></button>
+            <button class="slider-dot" type="button" data-slide-to="1" aria-label="Show slide 2"></button>
+            <button class="slider-dot" type="button" data-slide-to="2" aria-label="Show slide 3"></button>
+          </div>
+          <button class="slider-arrow" type="button" data-slider-next aria-label="Next slide">&rsaquo;</button>
+        </div>
       </section>
       <section class="commerce-band" id="shop-categories">
         <div class="container">

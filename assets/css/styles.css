@@ -101,17 +101,78 @@ p { margin: 0 0 18px; color: var(--muted); }
   font-size: 1.2rem;
 }
 
-.hero-static {
+.hero-slider {
   position: relative;
+  height: min(64vh, 680px);
+  min-height: 520px;
   overflow: hidden;
   background: #06101c;
 }
-.hero-static img {
-  display: block;
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 800ms ease;
+}
+.hero-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
+.hero-slide img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
-}.btn {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.slider-controls {
+  position: absolute;
+  left: 58px;
+  bottom: 34px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.slider-arrow {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(213, 178, 117, 0.85);
+  background: rgba(6, 16, 28, 0.28);
+  color: var(--gold-strong);
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.slider-arrow:hover {
+  background: rgba(213, 178, 117, 0.18);
+  transform: translateY(-1px);
+}
+.slider-dots {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.slider-dot {
+  width: 34px;
+  height: 3px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.42);
+  cursor: pointer;
+  transition: width 0.25s ease, background 0.25s ease;
+}
+.slider-dot.active {
+  width: 52px;
+  background: var(--gold);
+}
+.btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -693,6 +754,14 @@ p { margin: 0 0 18px; color: var(--muted); }
 .reveal-delay-2 { transition-delay: 0.2s; }
 
 @media (max-width: 1024px) {
+  .hero-slider {
+    height: 560px;
+    min-height: 500px;
+  }
+  .slider-controls {
+    left: 38px;
+    bottom: 28px;
+  }
   .two-col, .gallery-grid, .cta-box, .strip-inner {
     grid-template-columns: 1fr 1fr;
   }
@@ -739,6 +808,25 @@ p { margin: 0 0 18px; color: var(--muted); }
     border-bottom: 1px solid rgba(255,255,255,0.06);
   }
   .nav a:last-child { border-bottom: none; margin: 12px; }
+  .hero-slider {
+    height: 520px;
+    min-height: 520px;
+  }
+  .hero-slide img {
+    object-position: center center;
+  }
+  .slider-controls {
+    left: 20px;
+    right: 20px;
+    bottom: 24px;
+    justify-content: space-between;
+  }
+  .slider-dot {
+    width: 24px;
+  }
+  .slider-dot.active {
+    width: 40px;
+  }
   .two-col,
   .gallery-grid,
   .promo-grid,
