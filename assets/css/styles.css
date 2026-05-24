@@ -103,8 +103,9 @@ p { margin: 0 0 18px; color: var(--muted); }
 
 .hero-slider {
   position: relative;
-  height: min(64vh, 680px);
-  min-height: 520px;
+  height: calc(100vh - 82px);
+  min-height: 620px;
+  max-height: 860px;
   overflow: hidden;
   background: #06101c;
 }
@@ -125,6 +126,7 @@ p { margin: 0 0 18px; color: var(--muted); }
   height: 100%;
   object-fit: cover;
   object-position: center center;
+  display: block;
 }
 .slider-controls {
   position: absolute;
@@ -755,8 +757,8 @@ p { margin: 0 0 18px; color: var(--muted); }
 
 @media (max-width: 1024px) {
   .hero-slider {
-    height: 560px;
-    min-height: 500px;
+    height: 620px;
+    min-height: 620px;
   }
   .slider-controls {
     left: 38px;
@@ -809,8 +811,8 @@ p { margin: 0 0 18px; color: var(--muted); }
   }
   .nav a:last-child { border-bottom: none; margin: 12px; }
   .hero-slider {
-    height: 520px;
-    min-height: 520px;
+    height: 620px;
+    min-height: 620px;
   }
   .hero-slide img {
     object-position: center center;
