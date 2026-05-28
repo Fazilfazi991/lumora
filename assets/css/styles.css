@@ -498,17 +498,20 @@ p { margin: 0 0 18px; color: var(--muted); }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 44px;
-  border-radius: 8px;
-  background: #101722;
-  color: #fff;
+  min-height: 46px;
+  border-radius: 999px;
+  border: 1px solid rgba(184, 137, 67, 0.56);
+  background: linear-gradient(135deg, #d5b275 0%, #f0d7a8 100%);
+  color: #171007;
   font-weight: 800;
-  transition: background 0.25s ease, transform 0.25s ease;
+  box-shadow: 0 12px 24px rgba(184, 137, 67, 0.18);
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
 }
 .product-link:hover {
-  background: #b88943;
-  color: #1f160b;
-  transform: translateY(-1px);
+  background: #101722;
+  color: #fff;
+  box-shadow: 0 16px 28px rgba(16, 23, 34, 0.2);
+  transform: translateY(-2px);
 }
 .two-col {
   display: grid;
@@ -694,15 +697,25 @@ p { margin: 0 0 18px; color: var(--muted); }
   border-radius: 28px;
   box-shadow: var(--shadow);
 }
+.notes .two-col {
+  align-items: center;
+}
+.notes .section-copy {
+  max-width: 650px;
+}
 .note-groups {
   display: grid;
   gap: 14px;
   margin-top: 24px;
 }
-.note-card { padding: 18px; }
+.note-card {
+  padding: 20px 22px;
+  border-radius: 8px;
+}
 .note-card h3 {
   font-size: 1.45rem;
   margin-bottom: 8px;
+  color: var(--gold-strong);
 }
 .note-card p { margin: 0; }
 .cards-3 {
@@ -855,6 +868,24 @@ p { margin: 0 0 18px; color: var(--muted); }
   .strip-inner,
   .cta-box,
   .hero-points { grid-template-columns: 1fr; }
+  .notes .two-col {
+    gap: 28px;
+  }
+  .notes .section-copy {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .notes .section-copy p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .notes .single-image {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .notes .single-image img {
+    border-radius: 18px;
+  }
   .story-showcase,
   .story-showcase-inner {
     min-height: auto;
@@ -927,6 +958,9 @@ p { margin: 0 0 18px; color: var(--muted); }
   }
   .product-copy {
     padding: 18px;
+  }
+  .product-link {
+    width: 100%;
   }
   .gallery-card img {
     aspect-ratio: 1 / 1.08;
@@ -1018,6 +1052,9 @@ p { margin: 0 0 18px; color: var(--muted); }
   .note-card,
   .info-card {
     padding: 22px;
+  }
+  .note-card {
+    text-align: left;
   }
   .cta-box {
     padding: 28px 20px;
